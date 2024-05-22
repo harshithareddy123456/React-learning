@@ -1,0 +1,56 @@
+if we want to become frontend expert we have to be expert on networking,communication protocols,performance ,datahandling, security,optimisation,testing,offline support,accessibility,logging
+monitoring,LLD,HLD Questions
+How web works?
+✅ Communication Protocols
+✅ Rest API
+✅ GraphQl
+✅ gRPC
+✅ Short Polling
+✅ Long Polling
+✅ Web Socket
+✅ Server Sent Event
+✅ Webhook
+✅ WebRTC
+✅ XSS
+✅ CSRF
+✅ IFrame Protection
+✅ Authentication
+✅ Authorization
+✅ Security Headers
+✅ Client-Storage Security
+✅ HTTPS
+✅ Dependency Security
+✅ Compliance
+✅ SSRF
+✅ SSJI
+✅ Feature Policy
+✅ Permissions Policy
+✅ CORS
+✅ Microfrontend
+✅ Asset Optimization
+✅ Network Optimization
+✅ Build Optimization
+✅ React Optimization
+✅ Javascript Optimization
+✅ Performance Monitoring
+✅ PWA
+✅ Service Worker
+✅ Unit Testing
+✅ E2E Testing
+✅ Telemetry
+✅ Alerting
+✅ HTTP Caching
+✅ In memory caching
+✅ State Management
+✅ LocalStorage
+✅ Session Storage
+✅ Cookie Storage
+✅ IndexedDB
+✅ Keyboard Accessibility
+✅ Screen Reader
+✅ Color Contrasts
+✅ Design Systems
+✅ Polyfills
+✅ Sanitization
+✅ Regulations
+✅ Webkit browser support

@@ -1,0 +1,24 @@
+create react app is a abstraction of all the react application
+we want to know the configurations of our application
+
+webpack is a bundler which will convert our different files into css,html,js which are browser understandable 
+
+we have multiple concepts here:
+loaders
+plugins
+sourcemap - which will allow us to check the issues in source code
+please check in github for better understanding
+
+babel loader- is used for cross browser compatibility
+
+Interviewer: Can you explain to me what webpack is and how it works?
+Priya: Think of webpack as a module bundler for JavaScript applications. It takes all your modules, such as JavaScript files, CSS files, and images, and bundles them together into a single output file. It also has the ability to optimize and transform your code, making it more efficient for browsers to parse and execute. 𝐈𝐦𝐚𝐠𝐢𝐧𝐞 𝐲𝐨𝐮'𝐫𝐞 𝐩𝐚𝐜𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐚 𝐭𝐫𝐢𝐩. 𝐈𝐧𝐬𝐭𝐞𝐚𝐝 𝐨𝐟 𝐜𝐚𝐫𝐫𝐲𝐢𝐧𝐠 𝐢𝐧𝐝𝐢𝐯𝐢𝐝𝐮𝐚𝐥 𝐢𝐭𝐞𝐦𝐬 𝐬𝐞𝐩𝐚𝐫𝐚𝐭𝐞𝐥𝐲, 𝐰𝐞𝐛𝐩𝐚𝐜𝐤 𝐡𝐞𝐥𝐩𝐬 𝐲𝐨𝐮 𝐧𝐞𝐚𝐭𝐥𝐲 𝐩𝐚𝐜𝐤 𝐞𝐯𝐞𝐫𝐲𝐭𝐡𝐢𝐧𝐠 𝐢𝐧𝐭𝐨 𝐨𝐧𝐞 𝐬𝐮𝐢𝐭𝐜𝐚𝐬𝐞, 𝐦𝐚𝐤𝐢𝐧𝐠 𝐢𝐭 𝐞𝐚𝐬𝐢𝐞𝐫 𝐭𝐨 𝐦𝐚𝐧𝐚𝐠𝐞 𝐚𝐧𝐝 𝐭𝐫𝐚𝐧𝐬𝐩𝐨𝐫𝐭.
+
+Interviewer: Let's talk about loaders and plugins in webpack. Can you explain what they are and how they differ?
+Priya: Loaders and plugins are both essential parts of webpack, but they serve different purposes. Loaders are used to preprocess files before they are added to the bundle. For example, you might use a loader like Babel to transpile your ES6 JavaScript code into ES5, which is compatible with older browsers. Plugins, on the other hand, are used to perform a wider range of tasks, such as bundle optimization, asset management, and environment configuration. They hook into the webpack compilation process and can manipulate the bundle in various ways. 𝐀𝐧 𝐞𝐱𝐚𝐦𝐩𝐥𝐞 𝐟𝐨𝐫 𝐭𝐡𝐢𝐬 𝐰𝐨𝐮𝐥𝐝 𝐛𝐞 𝐝𝐞𝐜𝐨𝐫𝐚𝐭𝐢𝐧𝐠 𝐚 𝐜𝐚𝐤𝐞. 𝐋𝐨𝐚𝐝𝐞𝐫𝐬 𝐚𝐫𝐞 𝐥𝐢𝐤𝐞 𝐩𝐫𝐞𝐩𝐚𝐫𝐢𝐧𝐠 𝐭𝐡𝐞 𝐢𝐧𝐠𝐫𝐞𝐝𝐢𝐞𝐧𝐭𝐬 – 𝐦𝐢𝐱𝐢𝐧𝐠 𝐭𝐡𝐞 𝐛𝐚𝐭𝐭𝐞𝐫, 𝐚𝐝𝐝𝐢𝐧𝐠 𝐟𝐥𝐚𝐯𝐨𝐫𝐬, 𝐞𝐭𝐜. – 𝐰𝐡𝐢𝐥𝐞 𝐩𝐥𝐮𝐠𝐢𝐧𝐬 𝐚𝐫𝐞 𝐥𝐢𝐤𝐞 𝐚𝐝𝐝𝐢𝐧𝐠 𝐟𝐫𝐨𝐬𝐭𝐢𝐧𝐠, 𝐝𝐞𝐜𝐨𝐫𝐚𝐭𝐢𝐨𝐧𝐬, 𝐚𝐧𝐝 𝐟𝐢𝐧𝐚𝐥 𝐭𝐨𝐮𝐜𝐡𝐞𝐬 𝐭𝐨 𝐦𝐚𝐤𝐞 𝐭𝐡𝐞 𝐜𝐚𝐤𝐞 𝐥𝐨𝐨𝐤 𝐚𝐧𝐝 𝐭𝐚𝐬𝐭𝐞 𝐞𝐯𝐞𝐧 𝐛𝐞𝐭𝐭𝐞𝐫.
+
+Interviewer: What is tree shaking, and how does webpack utilize it to optimize bundles?
+Priya: Tree shaking is a process used to remove unused code from your bundle. It works by analyzing the code and identifying which modules and exports are not being used anywhere in your application. Then, it eliminates those unused parts from the final bundle, resulting in a smaller and more efficient package. 𝐉𝐮𝐬𝐭 𝐚𝐬 𝐲𝐨𝐮 𝐰𝐨𝐮𝐥𝐝 𝐭𝐫𝐢𝐦 𝐚𝐰𝐚𝐲 𝐝𝐞𝐚𝐝 𝐛𝐫𝐚𝐧𝐜𝐡𝐞𝐬 𝐟𝐫𝐨𝐦 𝐭𝐫𝐞𝐞 𝐭𝐨 𝐩𝐫𝐨𝐦𝐨𝐭𝐞 𝐡𝐞𝐚𝐥𝐭𝐡𝐲 𝐠𝐫𝐨𝐰𝐭𝐡, tree shaking removes dead code from your bundle, making your application leaner and faster. 
+
+
+Module Federation is an advanced feature introduced in Webpack 5 that enables multiple separate builds to work together in a single application. It allows for the sharing and loading of code between different Webpack builds at runtime, facilitating a microfrontend architecture. This is particularly useful for large-scale applications developed by multiple teams where independent deployments and decoupled development are critical.

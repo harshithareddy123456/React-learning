@@ -1,0 +1,127 @@
+#how javascript works?
+everything happens in javascript inside execution context
+after creating GEC ,JS engine creates 2 things
+first thing is global object and the other thing is this keyword
+javascript is synchronous ,single threaded language,loosely typed (we can put any type in the variable)
+execution context is where javascript code is executed and is divided into 2 components
+memory block:(creation phase)
+here variables and functions are stored in key value pairs 
+code execution block:(execution phase)
+this is where our javascript code executes
+
+#what happens when you run javascript code?
+when ever a js code is executed all the varaibles are given undefined and all the function data is moved to top of stack
+ans when new function is called new code execution context is created and in the code execution block code execution happens according to the call of variables and functions
+
+what is lexical scope?
+Lexical scoping means that the scope of a variable is determined by its location within the source code. 
+
+#hositing?
+Ex:
+getName();
+Console.log(x);
+Var x=7;
+Function getName(){
+  console.log("Namaste Javascript");
+}
+
+
+What is the output?:
+This will be a error in other languages
+Output:
+Namaste Javascript
+Undefined
+
+If we remove 
+Var x=7;
+It will give not defined and error
+
+Hoisting is a phenomenon by which u can access variables without initialising them
+
+#what is scope chain?
+the chain of lexical environment is called scope chain
+
+#what is lexical environment?(lexical =hierarchy)
+when execution context is created ,lexical environment is also created
+lexical environment is local memory along with lexical environmwnt of parent
+
+#why are let and const are called temporal dead zone?
+let and const memory is not allocated in global memory space hence cannot be accessed before initialising them
+the space between hoisting and assigning value is called temporal dead zone
+we cannot access variables in temporal dead zone
+
+#what are the differences between var,let,const?
+var is stored in global memory space
+var can be declared and intialised multiple times
+
+let is stored in seperate memory space
+let can be declared and initialised later
+we can assign value lateron
+let is in temporal dead zone
+let is block scoped
+
+const is stored in seperate memory space 
+const should declared and initialised in the same line
+we cannot assign any value lateron
+const is in temporal dead zone
+const is block scoped
+
+
+#what are reference error,syntax error,type error?
+reference error is when trying to access the variables outside of their scope
+syntax error is when for example not initialising but declaring the const variable
+type error is when u try to reinitialise the const variable
+
+#what is block scope and function scope?
+how functions and variables are accessed inside a block,we cannot access let and const outside the block and that is why they are called block scope
+when same var variables are defined outside block and inside ,shadowing happens where variable gets updated with variable inside the block 
+illegal shadowing:we cannot shadow let using var
+
+#what is block?
+when we want to implement multiple statements and send it as a single statement to javascript ,it is called block ,which is inside curly braces
+
+#what is closure?
+function along with its lexical environment
+
+#important question asked in interviews on closures
+
+#function statement or function declaration
+function a(){
+
+}
+#function expression
+var a =function a(){
+
+}
+
+#ananoymous function
+function (){
+
+}
+ananymous functions are used when functions are used as values
+
+#parameters and arguments
+var b=function xyz(param1,param2){
+
+}
+b(1,2)
+
+1,2 are arguments,param1,param2 are parameters
+
+#first class functions
+the ability to use functions as values 
+
+
+#difference between rest operator and spread operator
+both are the features of javascript but with different purposes and used in different contexts
+rest operator is used to represent indefinte number of arguments as a array
+the spread operator is used to expand elements of an array or an object
+
+#what are pure components?
+in class components we have inbuilt purecomponent where it will compare the props in the shallow level but in functional components
+we have react.memo which will perform the same functionality will is basically used for performance optimisation
+
+#what are arrow functions?
+arrow functions are concise way of defining the functions rather than regular functions and can be advantageous in many ways
+they are easier to write
+when there is only one statement we can eliminate the curly braces for return statement

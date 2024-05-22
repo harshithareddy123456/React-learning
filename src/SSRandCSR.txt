@@ -1,0 +1,16 @@
+SSR:
+ssr is a technique where web pages are generated on the webserver before it is sent to client
+csr is technique where web pages are generated on clients browser
+
+Server-Side Rendering (SSR):
+SSR is a technique where web pages are generated on the server and then sent to the client's browser.
+When a user requests a page, the server fetches the data, renders the HTML, CSS, and JavaScript, and sends a fully-formed web page to the browser.
+The browser receives the pre-rendered page and displays it to the user immediately.
+SSR is beneficial for improving initial page load times, search engine optimization (SEO), and providing content to users quickly, especially on slower devices or networks.
+Client-Side Rendering (CSR):
+CSR is a technique where web pages are generated in the client's browser using JavaScript.
+When a user requests a page, the server sends a minimal HTML document along with JavaScript files.
+The browser then executes the JavaScript, which fetches data from APIs and renders the content dynamically in the browser.
+CSR provides a more interactive user experience, as updates can be made to the page without requiring a full page reload.
+However, CSR can lead to slower initial page load times, poorer SEO performance (since search engine crawlers may not execute JavaScript), and may not be as suitable for content-heavy websites.
+In summary, SSR focuses on generating web pages on the server and sending them to the client, while CSR involves generating pages dynamically in the client's browser using JavaScript. Each approach has its own advantages and considerations, and the choice between SSR and CSR depends on factors such as performance requirements, SEO goals, and the nature of the web application being developed.

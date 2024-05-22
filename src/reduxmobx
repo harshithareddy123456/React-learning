@@ -1,0 +1,6 @@
+//mobx is mutable that means when action changes the observable changes immediately
+//redux will promote immutability as it will return a new object with pure reducer functions
+
+//mob requires less boiler plate compared to redux
+
+//mobx is used for small scale applications and redux is used when complex state management is required

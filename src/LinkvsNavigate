@@ -1,0 +1,4 @@
+Link uses declarative navigation ,which will mainly focus on what to show on UI instead of how to acheive it
+
+navigate or history.push is imperative navigation where it is navigated programmatically ,telling how to achieve instead
+of what to achieve

@@ -1,0 +1,9 @@
+tree shaking:
+Tree shaking is a technique used in modern JavaScript build processes, especially with bundlers like Webpack, Rollup, or Parcel, 
+to eliminate dead code from the final bundle. Dead code refers to any code that is not being used or referenced anywhere in the application. 
+Tree shaking helps reduce the size of the JavaScript bundle, resulting in faster load times for web applications.
+
+Lazy loading :
+is a technique used in web development to improve performance by deferring the loading of non-critical resources until they are needed. This is particularly useful for large web applications with many components or assets, 
+as it helps reduce the initial page load time and only loads resources when they are required.
+

@@ -1,0 +1,39 @@
+when html,css,js is sent to the browser ,the browser will create DOM which is a tree like structure created with the tags and elements that we 
+defined in the code,which acts basically like blue print of our application
+
+When you open a webpage in your browser, the HTML, CSS, and JavaScript code contained in that webpage are rendered to display the content and functionality.
+
+Here's a simplified overview of how this process typically works:
+
+HTML Parsing: The browser starts by parsing the HTML code of the webpage. It reads the HTML tags and creates a Document Object Model (DOM) tree, which represents the structure of the webpage.
+CSS Parsing and Styling: As the browser parses the HTML, it also encounters CSS code. The CSS is used to style the elements of the webpage. The browser parses the CSS code, applies the styles to the appropriate elements in the DOM tree, and creates a Render Tree.
+Render Tree Construction: The Render Tree is a combination of the DOM and CSSOM (CSS Object Model). It contains only the elements that are going to be rendered on the screen and their computed styles.
+Layout: Once the Render Tree is constructed, the browser performs layout calculations. It determines the position and size of each element on the webpage based on the styles applied and the content of the elements.
+Painting: Finally, the browser paints the pixels on the screen according to the layout information. It renders the content, applying styles, colors, images, etc., to display the webpage as intended.
+JavaScript Execution: While all this rendering is happening, if there is any JavaScript code present in the webpage, it will be executed. JavaScript can manipulate the DOM, change styles, handle user interactions, and perform various other tasks that enhance the functionality and interactivity of the webpage.
+This entire process is often referred to as the "Critical Rendering Path" and is optimized by browsers to ensure efficient rendering and a smooth user experience.
+
+
+what is DOM:
+
+DOM represents content of html page in tree like structure,DOM is a programming interface or an API and this API is used with any programming 
+most commonly it is used with javascript and using DOM we can easily read and update the content of Document
+The DOM is a object oriented representation of a web page ,which can be modified with different scripting language
+Every browser uses different DOM to make it accessible using js
+
+virtual DOM is in memory representation of an actual DOM
+only changes the necessary elements and components and make changes accordingly to actual DOM
+
+React code, written using JSX (JavaScript XML) syntax, needs to be transformed into browser-understandable JavaScript code before it can be executed. This transformation typically involves several steps:
+
+JSX Compilation: JSX is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript files. However, browsers cannot directly understand JSX. So, the first step is to compile JSX code into standard JavaScript. This is usually done using a tool like Babel, which converts JSX syntax into plain JavaScript function calls.
+Component Rendering: In React, you create components to encapsulate the UI elements of your application. Each component is essentially a JavaScript function that returns a representation of the UI. When React code is executed, these components are rendered to produce the corresponding DOM elements. React uses a virtual DOM to efficiently update the actual DOM based on changes to component state or props.
+Bundling and Minification: React applications are often composed of multiple JavaScript files (components, utility functions, etc.). Before deploying the application to the browser, these files are typically bundled together into a single file using a bundler like Webpack or Parcel. Additionally, the bundled JavaScript code is often minified to reduce its size, improving load times.
+Optimizations: React provides various optimizations to improve performance, such as memoization, lazy loading, and code splitting. These optimizations are applied during the build process to generate efficient JavaScript code that runs smoothly in the browser.
+Browser Execution: Once the React code has been transformed and optimized, the resulting JavaScript bundle is served to the browser. The browser then executes this JavaScript code, which in turn renders the React components, updates the DOM as needed, and handles user interactions.
+Overall, the transformation process ensures that React code, written using JSX syntax, is converted into efficient, browser-compatible JavaScript code that can be executed to produce dynamic and interactive web applications.
+
+continuation:
+
+next:
+browser runs our js code as it has jsre and to see jsre in detail go to jsengine.js file

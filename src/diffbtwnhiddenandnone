@@ -1,0 +1,6 @@
+//difference between visibility hidden and display none
+//visibility:hidden will not be displayed from the view and but will take up the space in the layout
+//the surrounding elements will get affected as if there is a element
+
+//display:none will not take up the space in the layout
+//the surrounding layout will not get affected as if there is element

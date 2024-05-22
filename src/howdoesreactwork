@@ -1,0 +1,24 @@
+react is a javascript library used to build dynamic web applications and single page applications without reloading the entire page
+
+key components and work flow:
+1.components:
+components are building blocks of React which are reusable all accross the aaplication
+component can be function or class
+
+2.jsx:
+jsx will allow us to write html like syntax in javascript
+JSX is transformed into JavaScript objects by tools like Babel.
+
+3.virtual DOM:
+inmemory representation of an actual DOM
+When the state of a component changes, React creates a new Virtual DOM tree and compares it with the previous one (a process called "reconciliation"). Only the differences are updated in the real DOM, making updates efficient and fast.
+
+4.States and props:
+state: state is an object that holds dynamic data of the component.when the state changes it results in re-render of the component
+props: props are input to the component.they are read only and will be passed down from parent to child
+
+5.Lifecycle Methods:
+
+Class Components: Class components can use lifecycle methods (e.g., componentDidMount, componentDidUpdate, componentWillUnmount) to perform actions at different stages of the component's lifecycle.
+Hooks: Function components can use hooks like useEffect to handle side effects and mimic lifecycle methods.
+
